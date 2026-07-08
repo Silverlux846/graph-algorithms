@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# C executables
+q1
+q2
+*.out
+*.exe
+
+# Debug folders
+*.dSYM
