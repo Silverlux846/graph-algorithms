@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #4e54c8, #8f94fb);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#game-container {
+    margin-top: 30px;
+}
+
+h1 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+#letter-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    grid-gap: 15px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.letter-tile {
+    background: white;
+    color: #4e54c8;
+    font-size: 32px;
+    font-weight: bold;
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: transform 0.1s ease;
+}
+
+.letter-tile.used {
+    background: #ddd;
+    color: #aaa;
+}
+
+.letter-tile:active {
+    transform: scale(0.9);
+}
+
+#current-word {
+    margin: 20px;
+    font-size: 30px;
+    min-height: 40px;
+}
+
+button {
+    background: #fff;
+    color: #4e54c8;
+    border: none;
+    padding: 12px 25px;
+    margin: 5px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #eee;
+}
+
+#words-container {
+    margin-top: 30px;
+}
+
+#word-list {
+    list-style: none;
+    padding: 0;
+    font-size: 24px;
+}
+
+.word-hidden {
+    letter-spacing: 8px;
+}
+
+#score {
+    margin-top: 25px;
+    font-size: 26px;
+}
+
+#next-phase-btn {
+    margin-top: 30px;
+}
